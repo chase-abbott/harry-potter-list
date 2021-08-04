@@ -17,7 +17,7 @@ export default function CharacterList(){
 
   const characterItems = characters.map((char, i) => (
     <Li key={i}>
-      <Character image={char.image} name={char.name}/>
+      <Character image={char.image} name={char.name} id={char.id}/>
     </Li>
   ));
 
