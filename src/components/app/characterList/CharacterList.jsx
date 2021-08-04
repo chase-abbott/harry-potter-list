@@ -6,7 +6,7 @@ import Character from '../character/Character.jsx';
 const Ul = styled.ul`
 list-style: none;
 display: grid;
-grid-template-columns: 1fr 1fr 1fr`;
+grid-template-columns: repeat(4, 1fr)`;
 
 const Li = styled.li`
 margin: 10px;

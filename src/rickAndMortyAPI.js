@@ -1,5 +1,5 @@
 const getCharacters = () => {
-  return fetch('http://hp-api.herokuapp.com/api/characters')
+  return fetch('https://rickandmortyapi.com/api/character')
     .then(res => res.json());
 };
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getCharacters } from './harryPotterAPI.js';
+import { getCharacters } from './rickAndMortyAPI.js';
 
 const useCharacters = () => {
   const [characters, setCharacters] = useState([]);
@@ -7,7 +7,7 @@ const useCharacters = () => {
 
   useEffect(() => {
     return getCharacters()
-      .then(res => setCharacters(res))
+      .then(res => setCharacters(res.results))
       .then(() => setLoading(false));
   }, []);
 
