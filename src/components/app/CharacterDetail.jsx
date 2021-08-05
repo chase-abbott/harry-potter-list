@@ -33,7 +33,7 @@ export default function CharacterDetail(){
       <Link to="/"> Back to Home</Link>
       <DetailContainer> 
         <Image src={character.image} alt={character.name}/>
-        <H1> {character.name}</H1>
+        <H1 data-testid="character-name"> {character.name}</H1>
         <H3> Status: {character.status}</H3>
         <H3> Species: {character.species}</H3>
         <H3> Origin: {character.origin.name} </H3>
