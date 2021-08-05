@@ -3,4 +3,9 @@ const getCharacters = () => {
     .then(res => res.json());
 };
 
-export { getCharacters };
+const getCharacterDetail = id => {
+  return fetch(`https://rickandmortyapi.com/api/character/${id}`)
+    .then(res => res.json());
+};
+
+export { getCharacters, getCharacterDetail };

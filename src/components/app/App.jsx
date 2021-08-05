@@ -6,7 +6,7 @@ import CharacterDetail from './CharacterDetail';
 export default function App() {
   return (
     <Switch>
-      <Route exact path="/:id" component={CharacterDetail}/>
+      <Route exact path="/detail/:id" component={CharacterDetail}/>
       <Route path="/" component={CharacterList}/>
     </Switch>
   );
